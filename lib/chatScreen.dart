@@ -18,9 +18,9 @@ class _ChatPageState extends State<ChatPage> {
   final fs = FirebaseFirestore.instance;
  // final _auth = FirebaseAuth.instance;
   final TextEditingController message = new TextEditingController();
-
   @override
   Widget build(BuildContext context) {
+    String sender = email;
     return Scaffold(
       appBar: AppBar(
         title: Text(
@@ -62,17 +62,18 @@ class _ChatPageState extends State<ChatPage> {
                     controller: message,
                     decoration: InputDecoration(
                       filled: true,
-                      fillColor: Colors.purple[100],
+                      fillColor: Colors.white,
                       hintText: 'message',
                       enabled: true,
                       contentPadding: const EdgeInsets.only(
                           left: 14.0, bottom: 8.0, top: 8.0),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: new BorderSide(color: Colors.purple),
+                        borderSide: new BorderSide(),
                         borderRadius: new BorderRadius.circular(10),
                       ),
+
                       enabledBorder: UnderlineInputBorder(
-                        borderSide: new BorderSide(color: Colors.purple),
+                        borderSide: new BorderSide(),
                         borderRadius: new BorderRadius.circular(10),
                       ),
                     ),
