@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "839162548633",
+    "firebase_url": "https://flutternoobie-default-rtdb.firebaseio.com",
+    "project_id": "flutternoobie",
+    "storage_bucket": "flutternoobie.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839162548633:android:a6aae9bd86f2c73ff6c308",
+        "android_client_info": {
+          "package_name": "com.example.chat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs2DDRAtAf53tt1R1ERj_2kC8I2qLDR7M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
