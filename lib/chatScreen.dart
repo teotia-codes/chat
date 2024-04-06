@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 //import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 //import 'login.dart';
 import 'message.dart';
 
@@ -22,9 +23,11 @@ class _ChatPageState extends State<ChatPage> {
   Widget build(BuildContext context) {
     String sender = email;
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
+        backgroundColor: Colors.black,
         title: Text(
-          'Chat',
+          'Chat',style: GoogleFonts.poppins(color: Colors.white),
         ),
        /* actions: [
           MaterialButton(
@@ -45,7 +48,7 @@ class _ChatPageState extends State<ChatPage> {
         ],*/
       ),
       body: SingleChildScrollView(
-        child: Column(
+              child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [

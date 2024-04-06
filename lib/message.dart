@@ -128,10 +128,10 @@ class _messagesState extends State<messages> {
                 side: const BorderSide(),
                 borderRadius: BorderRadius.circular(10),
               ),
-              tileColor: isSentByCurrentUser ? Colors.green.shade300 : const Color.fromARGB(255, 255, 252, 252),
+              tileColor: isSentByCurrentUser ? Color(0xFF833AB4) :  Color.fromARGB(255, 69, 66, 66),
               title: Text(
                 qs['email'],
-                style: const TextStyle(fontSize: 15),
+                style: const TextStyle(fontSize: 15, color: Colors.white),
               ),
               subtitle: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -141,11 +141,12 @@ class _messagesState extends State<messages> {
                     child: Text(
                       qs['message'],
                       softWrap: true,
-                      style: const TextStyle(fontSize: 15),
+                      style: const TextStyle(fontSize: 15,color: Colors.white),
                     ),
                   ),
                   Text(
                     d.hour.toString() + ":" + d.minute.toString(),
+                    style: TextStyle(color: Colors.white),
                   ),
                 ],
               ),
@@ -172,7 +173,6 @@ class _messagesState extends State<messages> {
 
         return ListView.builder(
           itemCount: snapshot.data!.docs.length,
-          physics: const ScrollPhysics(),
           shrinkWrap: true,
           primary: true,
           itemBuilder: (_, index) {
